@@ -44,23 +44,58 @@ def print_movie_ratings(movie_ratings: dict) -> None:
     print(movie_ratings)
 
 
-# List of movies
-movies = ["Harry Potter", "Wednesday", "AOT", "Breaking bad"]
-print_movie_list(movies)
+def add_movie_dynamic_rating(movie_list: list, movie_ratings: dict) -> None:
+    """
+    Adding a movie to the list also updates the movie_ratings dictionary
+    """
+    new_movie = input("Enter movie name to add to the movie list: ")
+    movie_list.append(new_movie)
+    movie_ratings[new_movie] = 5
 
-add_movie(movies, "Dark")
 
-# Set of actors
-actors = {"Harry", "Eren", "Meliodas"}
-print_movie_list(actors)
+def add_movies_until_exit(movie_list: list, movie_ratings: dict, stop_condition: str) -> None:
+    """
+    Adding movies to the movie list until the condition is not met
+    :param movie_list: List of movies
+    """
+    while True:
+        new_movie = input(f"Enter movie name to the list: (Stop by typing: {stop_condition})")
+        if stop_condition != new_movie:
+            movie_list.append(new_movie)
+            movie_ratings[new_movie] = 5
+        else:
+            break
 
-add_actor(actors, "Eren")
 
-# Dictionary of movie ratings
-ratings = {"Harry Potter": 7, "Wednesday": 9, "AOT": 9.8, "Breaking bad": 8.4}
-print_movie_ratings(ratings)
+# 1 - List of movies
+movie_list = ["Harry Potter", "Wednesday", "AOT", "Breaking bad", "Re:zero"]
+print_movie_list(movie_list)
+
+add_movie(movie_list, "Dark")
+print_movie_list(movie_list)
+
+# 2 - Set of actors
+actor_set = {"Harry", "Eren", "Meliiodas"}
+print_movie_list(actor_set)
+
+add_actor(actor_set, "Eren")
+print_movie_list(actor_set)
+
+# 3 - Dictionary of movie ratings
+movie_ratings = {"Harry Potter": 7, "Wednesday": 9, "AOT": 9.8, "Breaking bad": 8.4, "Re:zero": 9.1}
+print_movie_ratings(movie_ratings)
 
 # Dictionary with movies and their actors
-movie_with_actors = {"AOT": ["Eren", "Mikasa", "Armin", "Levi"],
-                     "RE:ZERO": ["Subaru", "Rem", "Ram"],
-                     "Demon Slayer": ["Tanjirou", "Nezoku", "Ma7mod"]}
+movies_with_actors = {"Harry Potter": ["Harry", "Bata", "Sambosek"],
+                      "Wednesday": ["Idk", "Didn't", "Watch", "It"],
+                      "AOT": ["Eren", "Mikasa", "Armin", "Levi"],
+                      "Breaking bad": ["This", "Onw", "Too", "xD"],
+                      "Re:zero": ["Subaru", "Rem", "Rom"]}
+
+# add_movie_dynamic_rating(movie_list, movie_ratings)
+# print(movie_list)
+# print(movie_ratings)
+
+add_movies_until_exit(movie_list, movie_ratings, "stop")
+print(movie_list)
+print(movie_ratings)
