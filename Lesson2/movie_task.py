@@ -1,3 +1,6 @@
+import datetime
+
+
 def print_movie_list(movie_list: list) -> None:
     """
     Prints the list of movies
@@ -63,8 +66,29 @@ def add_movies_until_exit(movie_list: list, movie_ratings: dict, stop_condition:
         if stop_condition != new_movie:
             movie_list.append(new_movie)
             movie_ratings[new_movie] = 5
+            write_log_file(new_movie)
         else:
+            print()
+            read_log_file()
             break
+
+
+def write_log_file(movie_name) -> None:
+    try:
+        with open('Time_log.txt', 'a') as file:
+            current_time = datetime.datetime.now().strftime("%d-%m-%y %H:%M:%S")
+            file.write(f"{current_time} - {movie_name} was added to the dictionary.\n")
+    except FileNotFoundError:
+        print("File not found")
+
+
+def read_log_file() -> None:
+    try:
+        with open('Time_log.txt', 'r') as file:
+            content = file.read()
+            print(f'All movies that got added to dictionary by input:\n{content}')
+    except FileNotFoundError:
+        print("File not found")
 
 
 # 1 - List of movies
