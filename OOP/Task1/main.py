@@ -1,5 +1,5 @@
-from Tasks.rectangle import Rectangle
-from Tasks.circle import Circle
+from Task1.rectangle import Rectangle
+from Task1.circle import Circle
 
 
 def main():
@@ -10,5 +10,5 @@ def main():
     print(cir.area())
     print(rec.area())
 
-
 main()
+

@@ -1,4 +1,4 @@
-from Tasks.shape import Shape
+from Task1.shape import Shape
 
 
 class Rectangle(Shape):
