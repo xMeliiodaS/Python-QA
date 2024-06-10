@@ -1,14 +1,14 @@
-from Task3.bank import BankAccount
+from Task3.bankAccount import BankAccount
 
 
 def main():
-    bank_acc = BankAccount("123", 100)
+    bank_acc = BankAccount("123", 0.0)
+    option = 0
 
     while True:
         try:
             option = int(input("Enter 1 to deposit\nEnter 2 to withdraw\n"
                                "Enter 3 to get balance\nEnter 4 to exit\n"))
-
         except ValueError:
             print("Please enter a number")
 
