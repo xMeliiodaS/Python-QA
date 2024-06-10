@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a780f895-fa9d-4a64-9f9a-533ed876cdc2" name="Changes" comment="" />
+    <list default="true" id="dfe75103-09ca-430f-a1f8-6685f0069935" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2hdK1LNT4V1Gm7xQIp8o2khKvm3" />
+  <component name="ProjectId" id="2hgRv3sDq2nWgivGMBovKmfUsxe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,34 +29,24 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Users/User/Desktop/Python-QA/Python-QA/OOP",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "D:/Users/User/Desktop/Python-QA/Python-QA/libraries",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\User\Desktop\Python-QA\Python-QA\OOP" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\Python-QA\Python-QA\libraries" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a780f895-fa9d-4a64-9f9a-533ed876cdc2" name="Changes" comment="" />
-      <created>1717918298070</created>
+      <changelist id="dfe75103-09ca-430f-a1f8-6685f0069935" name="Changes" comment="" />
+      <created>1718013960761</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1717918298070</updated>
+      <updated>1718013960761</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Task1/shape.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
