@@ -1,14 +1,19 @@
-import pandas as pn
+import pandas as pd
 
 
 class MyPandas:
 
     def __init__(self):
-        self.data = [1, 2, 3, 4, 5]
+        self._data = [1, 2, 3, 4, 5]
 
-    def create_series_data(self):
-        return pn.Series(self.data)
+    def create_series_data(self) -> pd.Series:
+        """
+        Creates a Pandas Series from the internal data list
+
+        :return: A Pandas Series object containing the data.
+        """
+        return pd.Series(self._data)
 
 
-asd = MyPandas()
-print(asd.create_series_data())
+panda_series = MyPandas()
+print(panda_series.create_series_data())
