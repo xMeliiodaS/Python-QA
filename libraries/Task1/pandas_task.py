@@ -17,6 +17,5 @@ class PandasTask:
     def df(self):
         return self._df
 
-
-data_frame_gen = PandasTask()
-print(data_frame_gen.df)
+    def print_df(self):
+        print(self._df.to_string(index=False))

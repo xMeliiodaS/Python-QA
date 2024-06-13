@@ -14,7 +14,3 @@ class NumPyTask:
             list: An array of random integers between 20 and 30
         """
         return numpy.random.randint(20, 30, self.days)
-
-
-temp_gen = NumPyTask(7)
-print(temp_gen.rand_temp_numpy())
