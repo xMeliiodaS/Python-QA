@@ -5,6 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-Hi
+    {% if usernameHtml %}
+        <h1>Welcome, {{ usernameHtml }}!</h1>
+    {% else %}
+        <h1>Welcome, Guest!</h1>
+    {% endif %}
 </body>
 </html>

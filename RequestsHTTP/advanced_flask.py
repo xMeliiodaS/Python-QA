@@ -21,8 +21,10 @@ def number(num):
 
 
 # Should be in a directory called templates
+# username should have a default value in order to use more than app.route
+@app.route('/html')
 @app.route('/html/<username>')
-def render_page(username):
+def render_page(username=""):
     return render_template('home.html', usernameHtml=username)
 
 

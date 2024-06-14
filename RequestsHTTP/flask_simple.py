@@ -1,6 +1,6 @@
 from flask import Flask
 
-from api_request import Requesta
+from api_request import ApiRequest
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ def bahaa():
 
 @app.route('/get_houses')
 def get_all_houses():
-    return Requesta.get_all_houses('stam')
+    return ApiRequest.get_all_houses()
 
 
 if __name__ == '__main__':

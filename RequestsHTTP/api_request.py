@@ -1,9 +1,10 @@
 import requests
 
 
-class Requesta:
+class ApiRequest:
 
-    def get_all_houses(self):
+    @staticmethod
+    def get_all_houses():
         url = f"https://wizard-world-api.herokuapp.com/Houses"
 
         houses_respond = requests.get(url)
