@@ -11,7 +11,7 @@
         <h1>Welcome to Our Website, {{ username }}!</h1>
         <nav>
             <ul>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('home', user=username) }}">Home</a></li>
                 <li><a href="{{ url_for('profile', user=username) }}">Profile</a></li>
             </ul>
         </nav>
@@ -20,9 +20,9 @@
         <section>
             <h2>Users</h2>
             <ul>
-                <li><a href="{{ url_for('name', user='john') }}">john</a></li>
-                <li><a href="{{ url_for('name', user='jane') }}">jane</a></li>
-                <li><a href="{{ url_for('name', user='alice') }}">alice</a></li>
+                <li><a href="{{ url_for('home', user='john') }}">john</a></li>
+                <li><a href="{{ url_for('home', user='jane') }}">jane</a></li>
+                <li><a href="{{ url_for('home', user='alice') }}">alice</a></li>
             </ul>
         </section>
     </main>

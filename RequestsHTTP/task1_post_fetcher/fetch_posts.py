@@ -12,11 +12,12 @@ def get_request():
     else:
         print("Failed to fetch user data with status code: ", response.status_code)
 
-    response.json()
-
 
 def get_first_five_posts(data):
+
+    # Get the first five posts
     first_five_posts = data[:5]
+
     for i, post in enumerate(first_five_posts, start=1):
         print(f"Post {i}:")
         print(f"Title: {post['title']}")

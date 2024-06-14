@@ -6,13 +6,13 @@ class App:
 
     @staticmethod
     @app.route('/')
-    def home():
+    def first_page():
         return "Hey, welcome to the home page"
 
     @staticmethod
     @app.route('/home')
     @app.route('/home/<user>')
-    def name(user=""):
+    def home(user=""):
         return render_template('home.html', username=user)
 
     @staticmethod

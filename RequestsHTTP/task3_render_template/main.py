@@ -1,4 +1,4 @@
-from Task3.app import App
+from task3_render_template.app import App
 
 
 def main():
