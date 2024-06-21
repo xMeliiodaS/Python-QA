@@ -1,6 +1,7 @@
 import json
 from book import Book
 
+
 class Library:
     def __init__(self, filename="library.json"):
         """
@@ -55,6 +56,19 @@ class Library:
                 self.save_library()
                 return True
         return False
+
+    def search_books(self, query):
+        """
+        Search for books in the library based on a search query.
+
+        Args:
+        - query (str): Search query to match against book titles.
+
+        Returns:
+        - list: List of Book objects whose titles match the search query.
+        """
+        query = query.lower().strip()
+        return [book for book in self.books if query in book.title.lower()]
 
     def delete_book(self, title):
         """
