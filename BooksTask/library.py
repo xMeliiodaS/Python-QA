@@ -44,7 +44,7 @@ class Library:
 
     def edit_book(self, title, new_details):
         """
-        Edit details of a specific book in the library and save library data to file.
+        Edit details of a specific book in the library and save library data to file.s
 
         Args:
         - title (str): Title of the book to edit.
