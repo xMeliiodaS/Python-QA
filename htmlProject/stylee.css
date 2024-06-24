@@ -55,13 +55,6 @@ figure img {
     border: 1px solid #ccc;
 }
 
-figure:hover img {
-    transform: scale(1.1); /* Scale up image on hover */
-}
-
-figure:hover::after {
-    opacity: 1; /* Show overlay on hover */
-}
 
 footer {
     text-align: center;
@@ -72,3 +65,32 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .me, h1 {
+        max-width: 80%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    li {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .me, h1 {
+        max-width: 100%;
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    li {
+        max-width: 50%;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
