@@ -83,6 +83,12 @@ form input[type="submit"] {
     animation: slideInFromTop 0.5s ease-out forwards;
     background-color: #3498db;
     color: white;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3c89d0;
 }
 
 @keyframes fadeIn {
