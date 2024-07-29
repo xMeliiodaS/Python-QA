@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dff28f9-186c-4790-82c4-c1690dbbea5a" name="Changes" comment="" />
+    <list default="true" id="6dff28f9-186c-4790-82c4-c1690dbbea5a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BooksTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksTask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +34,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Users/User/Desktop/Books/BooksTask",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
